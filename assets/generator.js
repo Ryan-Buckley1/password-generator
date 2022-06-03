@@ -40,7 +40,7 @@ function writePassword() {
 
 }
 function generatePassword () {
-    debugger;
+    // debugger;
     writePassword();
 }
 
