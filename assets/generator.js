@@ -13,6 +13,10 @@ function writePassword() {
     var rawpassword = "";
     var passwordText = document.querySelector("#password");
     var passLength = window.prompt('Submit a number from 8 to 128 for your password length.');
+    if (passLength < 8) {
+        window.alert("You have to choose at least a length of 8. ")
+        return writePassword();
+    }
     var lowercaseConfirm = window.confirm('Do you require lowercase letters?');
     if (lowercaseConfirm) {
         window.alert("You added lowercase letters.");
