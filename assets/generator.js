@@ -13,8 +13,8 @@ function writePassword() {
     var rawpassword = "";
     var passwordText = document.querySelector("#password");
     var passLength = window.prompt('Submit a number from 8 to 128 for your password length.');
-    if (passLength < 8) {
-        window.alert("You have to choose at least a length of 8. ")
+    if (passLength < 8 || passLength > 128) {
+        window.alert("You have to choose at least a length of 8 characters and no longer than 128 characters. ");
         return writePassword();
     }
     var lowercaseConfirm = window.confirm('Do you require lowercase letters?');
@@ -43,7 +43,7 @@ function writePassword() {
     }
     var password = ""; 
     for (let i = 0; i < passLength; i++) {
-        password += rawpassword[Math.floor(Math.random() * rawpassword.length)]
+        password += rawpassword[Math.floor(Math.random() * rawpassword.length)];
     }
     
     

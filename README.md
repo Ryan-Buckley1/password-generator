@@ -2,7 +2,7 @@
 
 Upon pressing the generate button the function writepassword kicks on and and creates a variable rawpassword. 
 ### length of password
-The function then asks the user how long of a password they would like and stores it as passLength. 
+The function then asks the user how long of a password they would like and stores it as passLength. If the user chooses something outside of the range they are alerted and sent back to the beginning of the function.
 ### lowercase involement
 Then the user is asked if they want lowercase letters and the user is notified that they are using lowercase letters if they confirm they want them. The lowercase letters are then added to the raw password.
 ### uppercase involement
