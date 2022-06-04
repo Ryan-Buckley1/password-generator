@@ -18,6 +18,6 @@ Then the function writepassword randomizes all of the options selected together 
 ### rawpassword to password
 Then rawpassword is equal to password to send it to the html to be displayed on the page!
 
-![](assets\images\screenshot.png)
+![](assets%5Cimages%5Cscreenshot.png)
 
 https://ryan-buckley1.github.io/password-generator/
