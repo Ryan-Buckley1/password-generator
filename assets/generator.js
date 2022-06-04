@@ -85,6 +85,6 @@ generateBtn.addEventListener("click", writePassword);
 
 // DUCK FOR FUN 
 // <!--       _
-//        .__(.)< (MEOW)
+//        .__(.)< (The Buck has entered the building)
 //         \___)   
 //  ~~~~~~~~~~~~~~~~~~-->
