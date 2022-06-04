@@ -15,19 +15,27 @@ function writePassword() {
     var passLength = window.prompt('Submit a number from 8 to 128 for your password length.');
     var lowercaseConfirm = window.confirm('Do you require lowercase letters?');
     if (lowercaseConfirm) {
+        window.alert("You added lowercase letters.");
      rawpassword += characters.lowercase;
     };
     var uppercaseConfirm = window.confirm('Do you require Uppercase letters?');
     if (uppercaseConfirm) {
+        window.alert("You added uppercase letters.");
         rawpassword += characters.uppercase;
     }
     var symbolConfirm = window.confirm('Do you require symbols?');
     if (symbolConfirm) {
+        window.alert("You added symbols.");
         rawpassword += characters.symbol;
     }
     var numberConfirm = window.confirm('Do you require numbers?');
     if (numberConfirm) {
+        window.alert("You added numbers.")
         rawpassword += characters.number;
+    }
+    if (numberConfirm === false && lowercaseConfirm === false && symbolConfirm === false && numberConfirm === false) {
+        window.alert("You must choose at least one of the options.");
+        return writePassword();
     }
     var password = ""; 
     for (let i = 0; i < passLength; i++) {
