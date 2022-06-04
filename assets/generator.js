@@ -82,3 +82,9 @@ function generatePassword () {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+// DUCK FOR FUN 
+// <!--       _
+//        .__(.)< (MEOW)
+//         \___)   
+//  ~~~~~~~~~~~~~~~~~~-->
